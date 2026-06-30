@@ -1103,8 +1103,8 @@ function common.buildInflightBoxes()
     local lineH = max(2, round(H * 0.005))
     local readoutPad = max(5, round(W * 0.007))
     local readoutGap = max(5, round(W * 0.008))
-    local arcT = max(12, round(H * 0.050))
-    local bigArcT = max(16, round(H * 0.065))
+    local arcT = max(10, round(H * 0.042))
+    local bigArcT = max(12, round(H * 0.048))
 
     add(out, backgroundBox(W, H, p.bg))
 
@@ -1131,7 +1131,7 @@ function common.buildInflightBoxes()
     -- Headspeed arc 1500-1900 with 1840 normal target headroom
     add(out, widgetBox(W, H, 0.30, 0.105, 0.40, 0.39, "gauge", "arc", {
         source = "rpm", transform = "floor", unit = "", novalue = "-", min = 1500, max = 1900,
-        thickness = bigArcT, font = opts.bigfont, valuepaddingtop = max(6, round(H * 0.025)),
+        thickness = bigArcT, font = opts.rightvaluefont, valuepaddingtop = max(6, round(H * 0.025)),
         fillcolor = p.line, fillbgcolor = p.dim, textcolor = p.white, titlecolor = p.line, bgcolor = p.bg
     }))
     add(out, labelBox(W, H, 0.46, 0.455, 0.08, 0.05, "RPM", opts.biglabelfont, p.line, "center", p.bg))
