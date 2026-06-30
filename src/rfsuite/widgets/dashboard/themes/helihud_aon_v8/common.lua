@@ -1103,8 +1103,8 @@ function common.buildInflightBoxes()
     local lineH = max(2, round(H * 0.005))
     local readoutPad = max(5, round(W * 0.007))
     local readoutGap = max(5, round(W * 0.008))
-    local arcT = max(12, round(H * 0.050))
-    local bigArcT = max(16, round(H * 0.065))
+    local arcT    = max(10, round(H * 0.042))
+    local bigArcT = max(12, round(H * 0.048))
 
     add(out, backgroundBox(W, H, p.bg))
 
