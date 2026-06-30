@@ -1130,7 +1130,7 @@ function common.buildInflightBoxes()
 
     -- Headspeed arc 1500-1900 with 1840 normal target headroom
     add(out, widgetBox(W, H, 0.30, 0.105, 0.40, 0.39, "gauge", "arc", {
-        source = "rpm", transform = "floor", unit = "", novalue = "-", min = 1500, max = 1900,
+        source = "rpm", transform = "floor", unit = "", novalue = "-", min = 0, max = 5000,
         thickness = bigArcT, font = opts.rightvaluefont, valuepaddingtop = max(6, round(H * 0.025)),
         fillcolor = p.line, fillbgcolor = p.dim, textcolor = p.white, titlecolor = p.line, bgcolor = p.bg
     }))
