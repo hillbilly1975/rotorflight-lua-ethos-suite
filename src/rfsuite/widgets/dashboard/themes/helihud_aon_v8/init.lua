@@ -3,7 +3,7 @@
 ]] --
 
 return {
-    name = "HeliHUD AON V8",
+    name = "AON",
     preflight = "preflight.lua",
     inflight = "inflight.lua",
     postflight = "postflight.lua",
